@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug image_train.py",
+      "type": "python",
+      "request": "launch",
+      "program": "scripts/image_train.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--data_dir",
+        "datasets/imagenet_sample/imagenet_sample/train",
+        "--image_size",
+        "64",
+        "--num_channels",
+        "128",
+        "--num_res_blocks",
+        "3",
+        "--diffusion_steps",
+        "4000",
+        "--noise_schedule",
+        "linear",
+        "--lr",
+        "1e-4",
+        "--batch_size",
+        "32"
+      ]
+    }
+  ],
+  "env": {
+    "RDMAV_FORK_SAFE": "1"
+  }
+}
